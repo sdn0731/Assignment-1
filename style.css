@@ -16,8 +16,6 @@
 
 .h2 {
   grid-area: h2;
-  font-family: Comic Sans MS, Comic Sans, cursive;
-  font-weight: normal;
   text-align: right;
   padding: 5px;
 }
@@ -27,9 +25,7 @@
   grid-area: n;
   background-color: orange;
   border: solid black;
-  font-family: Comic Sans MS, Comic Sans, cursive;
   padding: 5px;
-  
 }
 
 /* Main */
@@ -39,7 +35,6 @@
   border-right: solid black;
   border-top: solid black;
   border-bottom: solid black;
-  font-family: Arial, sans-serif;
   padding: 5px;
 }
 
@@ -49,7 +44,6 @@
   color: lightyellow;
   background-color: black;
   border: solid black;
-  font-family: Comic Sans MS, Comic Sans, cursive;
   text-align: center;
   padding: 5px;
 }
@@ -66,8 +60,66 @@ color: lightyellow;
 /* Lists */
 ol.uroman {
   list-style-type: upper-roman;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-color: black;
 }
 
 ol.lroman {
   list-style-type: lower-roman;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-color: black;
+}
+
+ul {
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-color: black;
+}
+
+li {
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-color: black;
+}
+
+li.bold {
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-color: black;
+  font-weight: bold;
+}
+
+li.orange {
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-color: black;
+  background-color: #FFEDB8;
+}
+
+/* Tables */
+table, th, td {
+  border: 3px solid black;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-color: black;
+}
+
+/* Text */
+body {
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-color: black;
+}
+
+h1 {
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-color: black;
+}
+
+h2 {
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-color: black;
+}
+
+p {
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-color: black;
+}
+
+/* Images */
+img {
 }
