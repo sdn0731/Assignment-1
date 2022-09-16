@@ -1,4 +1,64 @@
-html, body {
-  height: 100%;
-  width: 100%;
+/* Grid */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "h h h2 h2"
+    "n m m m"
+    "n m m m"
+    "f f f f";
+}
+
+/* Headers */
+.h1 {
+  grid-area: h;
+  padding: 5px;
+}
+
+.h2 {
+  grid-area: h2;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-weight: normal;
+  text-align: right;
+  padding: 5px;
+}
+
+/* Navigation */
+.n {
+  grid-area: n;
+  background-color: orange;
+  border: solid black;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  padding: 5px;
+  
+}
+
+/* Main */
+.m {
+  grid-area: m;
+  background-color: lightyellow;
+  border-right: solid black;
+  border-top: solid black;
+  border-bottom: solid black;
+  font-family: Arial, sans-serif;
+  padding: 5px;
+}
+
+/* Footer */
+.f {
+  grid-area: f;
+  color: lightyellow;
+  background-color: black;
+  border: solid black;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  text-align: center;
+  padding: 5px;
+}
+
+/* Links */
+a {
+  color: black;
+}
+
+a:hover {
+color: lightyellow;
 }
