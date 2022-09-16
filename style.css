@@ -17,6 +17,8 @@
 .h2 {
   grid-area: h2;
   text-align: right;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  color: black;
   padding: 5px;
 }
 
@@ -25,6 +27,8 @@
   grid-area: n;
   background-color: orange;
   border: solid black;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  color: black;
   padding: 5px;
 }
 
@@ -35,16 +39,19 @@
   border-right: solid black;
   border-top: solid black;
   border-bottom: solid black;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  color: black;
   padding: 5px;
 }
 
 /* Footer */
 .f {
   grid-area: f;
-  color: lightyellow;
   background-color: black;
   border: solid black;
   text-align: center;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  color: lightyellow;
   padding: 5px;
 }
 
@@ -61,65 +68,72 @@ color: lightyellow;
 ol.uroman {
   list-style-type: upper-roman;
   font-family: Comic Sans MS, Comic Sans, cursive;
-  font-color: black;
+  color: black;
 }
 
 ol.lroman {
   list-style-type: lower-roman;
   font-family: Comic Sans MS, Comic Sans, cursive;
-  font-color: black;
+  color: black;
 }
 
 ul {
-  font-family: Comic Sans MS, Comic Sans, cursive;
-  font-color: black;
-}
-
-li {
-  font-family: Comic Sans MS, Comic Sans, cursive;
-  font-color: black;
+  color: darkmagenta;
 }
 
 li.bold {
   font-family: Comic Sans MS, Comic Sans, cursive;
-  font-color: black;
+  color: black;
   font-weight: bold;
 }
 
 li.orange {
   font-family: Comic Sans MS, Comic Sans, cursive;
-  font-color: black;
+  color: black;
   background-color: #FFEDB8;
 }
 
 /* Tables */
-table, th, td {
+table {
   border: 3px solid black;
-  font-family: Comic Sans MS, Comic Sans, cursive;
-  font-color: black;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5em;
+}
+
+th {
+  border: 3px solid black;
+  background-color: black;
+  color: white;
+}
+
+td {
+  border: 3px solid black;
+  font-family: "Times New Roman", Times, serif;
+  background-color: #FFEDB8;
+  color: darkblue;
 }
 
 /* Text */
 body {
   font-family: Comic Sans MS, Comic Sans, cursive;
-  font-color: black;
 }
 
 h1 {
   font-family: Comic Sans MS, Comic Sans, cursive;
-  font-color: black;
+  color: midnightblue;
 }
 
 h2 {
   font-family: Comic Sans MS, Comic Sans, cursive;
-  font-color: black;
+  color: orange;
 }
 
-p {
+p.bold {
   font-family: Comic Sans MS, Comic Sans, cursive;
-  font-color: black;
+  font-weight: bold;
 }
 
 /* Images */
 img {
+  background-color: #FFEDB8;
 }
