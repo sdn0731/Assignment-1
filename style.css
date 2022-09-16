@@ -62,3 +62,12 @@ a {
 a:hover {
 color: lightyellow;
 }
+
+/* Lists */
+ol.uroman {
+  list-style-type: upper-roman;
+}
+
+ol.lroman {
+  list-style-type: lower-roman;
+}
