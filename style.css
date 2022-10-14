@@ -137,3 +137,26 @@ p.bold {
 img {
   background-color: #FFEDB8;
 }
+
+/* Required Input (Form) */
+input.required {
+  background-color: #CBC3E3;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+/* Non-Required Input (Form) */
+input.nonrequired {
+  background-color: whitesmoke;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+/* Submit Button (Form) */
+input.submit {
+  background-color: orange;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+/* Reset Button (Form) */
+input.reset {
+  background-color: whitesmoke;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}

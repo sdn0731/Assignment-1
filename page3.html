@@ -24,6 +24,48 @@
   <!-- Main -->
   <main class="m">
     <h1>Page 3</h1>
+    <h2>Registration Form</h2>
+      <form action="https://webdevbasics.net/scripts/yoga.php" id="form" onsubmit="return validateForm()" method="post">
+        
+        <!-- First Name -->
+        <label for="fname">First Name: </label>
+        <input class="nonrequired" type="text" id="fname" name="fname" placeholder="Enter first name here" maxlength="50"><br><br>
+        
+        <!-- Last Name -->
+        <label for="lname">Last Name: </label>
+        <input class="nonrequired" type="text" id="lname" name="lname" placeholder="Enter last name here" maxlength="50"><br><br>
+
+        <!-- Birth Year -->
+        <label for="byear">Birth Year: </label>
+        <input class="nonrequired" type="number" id="byear" name="byear" min="1990" max="2022"><br><br>
+        
+        <!-- Email Address -->
+        <label for="email">Email Address: </label>
+        <input class="nonrequired" type="email" id="email" name="email" placeholder="Enter a valid email here"><br><br>
+
+        <!-- Phone Number -->
+        <label for="tel">Phone Number: </label>
+        <!-- Pattern Source: https://www.oreilly.com/library/view/regular-expressions-cookbook/9781449327453/ch04s02.html -->
+        <input class="nonrequired" type="tel" id="tel" name="tel" placeholder="123-456-7890" pattern="^\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$"><br><br>
+        
+        <!-- Username -->
+        <label for="username">Desired Username: </label>
+        <input class="required" type="text" id="username" name="username" minlength="5" maxlength="10" required><br><br>
+
+        <!-- Password -->
+        <label for="password">Password: </label>
+        <input class="required" type="password" id="password" name="password" minlength="8" required>
+
+        <!-- Retype Password -->
+        <label for="rpassword">Retype Password: </label>
+        <input class="required" type="password" id="rpassword" name="rpassword" minlength="8" required><br><br>
+
+        <!-- Submit -->
+        <input class="submit" type="submit" value="Submit">
+
+        <!-- Reset -->
+        <input class="reset" type="reset" value="Reset">
+      </form>
   </main>
   
   <!-- Nav -->
@@ -48,5 +90,5 @@
   <script src="script.js"></script>
   <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
 </body>
-
+  
 </html>
