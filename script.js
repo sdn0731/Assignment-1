@@ -22,3 +22,20 @@ function validateForm() {
     return false;
   }
 }
+
+// Create canvas
+var canvas = document.getElementById("mycanvas");
+
+// Display canvas
+if (canvas.getContext) {
+  // Establish object type (2d)
+  var text = canvas.getContext("2d");
+
+  // Establish and alter text 1
+  text.textAlign = "center";
+  text.font = "Bold 25px Arial";
+  text.fillText("Drink coffee!",100,100);
+} else {
+    // Establish alternative text
+    alert("Canvas is unsupported by your browser.");
+}

@@ -2,10 +2,9 @@
 .grid-container {
   display: grid;
   grid-template-areas:
-    "h h h2 h2"
-    "n m m m"
-    "n m m m"
-    "f f f f";
+    "h h h2"
+    "n m a"
+    "f f f";
 }
 
 /* Headers */
@@ -22,6 +21,23 @@
   padding: 5px;
 }
 
+/* Add Media Query and Background Change */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: #FFEDB8;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "h h2"
+      "n n"
+      "m m"
+      "a a"
+      "f f";
+    gap: 10px;
+  }
+}
+
 /* Navigation */
 .n {
   grid-area: n;
@@ -36,6 +52,18 @@
 .m {
   grid-area: m;
   background-color: lightyellow;
+  border-right: solid black;
+  border-top: solid black;
+  border-bottom: solid black;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  color: black;
+  padding: 5px;
+}
+
+/* Aside */
+.a {
+  grid-area: a;
+  background-color: #FFEDB8;
   border-right: solid black;
   border-top: solid black;
   border-bottom: solid black;
@@ -159,4 +187,10 @@ input.submit {
 input.reset {
   background-color: whitesmoke;
   font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+/* Canvas */
+canvas {
+  border: 3px solid black;
+  background-color: orange;
 }
